@@ -1,0 +1,4 @@
+Hypothesis,Comparison,RMSE_Before,RMSE_After,Δ RMSE,% Reduction,Status
+H1,Config A vs B,9800,9100,-700,-7.1%,PASS
+H2,Config B vs C,9100,8650,-450,-4.9%,PASS
+H3,Config C vs D,8650,8480,-170,-2.0%,PASS

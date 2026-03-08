@@ -1,0 +1,6 @@
+Rank,Feature,Importance,Category
+1,landings_lag1,0.342,Historical
+2,landings_lag12,0.287,Historical
+3,temperature,0.156,Climate
+4,month_Nov,0.089,Seasonal
+5,humidity,0.067,Climate
