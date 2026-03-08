@@ -1,0 +1,39 @@
+# Python cache
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Jupyter Notebook
+.ipynb_checkpoints/
+
+# Virtual environments
+venv/
+env/
+.venv/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDEs
+.vscode/
+.idea/
+
+# Environment variables
+.env
+.env.*
+
+# Python testing / coverage
+.pytest_cache/
+.mypy_cache/
+coverage.xml
+htmlcov/
+
+# Logs
+*.log
+
+# Optional: ignore generated figures
+# outputs/figures/
+# outputs/*.png
+# outputs/*.jpg
+# outputs/*.pdf
