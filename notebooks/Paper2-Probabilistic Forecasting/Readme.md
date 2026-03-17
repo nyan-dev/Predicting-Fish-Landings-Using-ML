@@ -37,3 +37,12 @@ This project established a robust analytical pipeline to forecast aquaculture la
 
 ### **Conclusion**
 The integration of lagged landings, climate covariates, and recursive XGBoost modeling, combined with post-hoc residual recalibration, provides a statistically valid and informative framework for fisheries management in Malaysia through 2030.
+
+1. How should uncertainty be quantified?
+We used Bootstrap Residual Simulation. Instead of assuming a standard 'bell curve' for errors, we sampled the model's actual historical errors (residuals) and added them to the future predictions 1,000 times. This allowed us to build custom 80% and 95% prediction intervals that reflect the model's real-world behavior.
+
+2. How uncertain are future forecasts?
+In Section D, we discovered that 'naive' uncertainty quantification was dangerously overconfident (0% coverage). We then answered the 'how' by implementing a Residual Scaling Factor in Section E. This recalibration quantified the uncertainty more honestly, expanding the bands until they achieved 100% reliability (PICP).
+
+3. Conclusion on Uncertainty
+By the end of Section F, your forecasts aren't just lines; they are 'ribbons' of probability. The width of those orange bands in your plots represents the quantified uncertainty. You can now say, for example, that while we predict X units for 2025, we are 95% confident the actual value will fall within the specific range calculated by the recalibrated bootstrap.
